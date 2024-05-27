@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgba(209, 246, 247, 0.699);
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff)
+    background: linear-gradient(to right, #a2f3d8, #c9d6ff)
 }
 .container{
     background: #fff;
@@ -84,13 +84,14 @@ input:focus~label,input:not(:placeholder-shown)~label{
     outline: none;
     border: none;
     width: 100%;
-    background: rgb(125,125,235);
+    background: linear-gradient(to right, #a2f3d8, #c9d6ff);
     color: white;
     cursor: pointer;
     transition: 0.9;
 }
 .btn:hover{
-    background: #07001f;
+    background: linear-gradient(to right, #a2f3d8,#07001f, #c9d6ff);
+    
 }
 .or{
     font-size: 1.1rem;
