@@ -1,4 +1,4 @@
 # PHP_LoginAuth
-PHP Login Authentication for School Management System - OOP and shared Repo
+Simple PHP Login Authentication with DB using XAMPP
 
 v.1
