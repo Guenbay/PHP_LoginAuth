@@ -59,7 +59,7 @@
 <div class="container" id="signIn">
     <h1 class="form-title">Anmelden</h1>
     <p>Du kannst dich hier Anmelden!</p>
-    <form action="register.php" method="POST">
+    <form action="login.php" method="POST">
         
         <div class="input-group">
             <i class="fas fa-envelope"></i>
