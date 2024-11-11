@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierungsformular</title>
+    <style>
+        .admin-warning {
+            color: red;
+            font-size: 0.9em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registrierung</h2>
+    <form id="registrationForm" action="/register" method="post">
+        <!-- Name und Email werden immer benötigt -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Rollenauswahl -->
+        <label for="role">Rolle:</label>
+        <select id="role" name="role" required>
+            <option value="">-- Wählen Sie Ihre Rolle --</option>
+            <option value="student">Student</option>
+            <option value="schueler">Schüler</option>
+            <!-- Administrator nur bei Bedarf und Kontrolle verfügbar machen -->
+            <option value="administrator">Administrator</option>
+        </select>
+        <span class="admin-warning">* Administratorzugänge sollten nur von bestehenden Administratoren erstellt werden.</span><br>
+
+        <!-- Falls es relevante Felder für Schüler/Studenten gibt -->
+        <div id="studentFields" style="display: none;">
+            <label for="studiengang">Studiengang:</label>
+            <input type="text" id="studiengang" name="studiengang"><br>
+        </div>
+        <div id="schuelerFields" style="display: none;">
+            <label for="klasse">Klasse:</label>
+            <input type="text" id="klasse" name="klasse"><br>
+        </div>
+
+        <!-- Passwortfeld -->
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Passwort bestätigen:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <button type="submit">Registrieren</button>
+    </form>
+
+    <script>
+        // JavaScript zum Anpassen der sichtbaren Formularfelder
+        document.getElementById('role').addEventListener('change', function() {
+            let role = this.value;
+            document.getElementById('studentFields').style.display = (role === 'student') ? 'block' : 'none';
+            document.getElementById('schuelerFields').style.display = (role === 'schueler') ? 'block' : 'none';
+            document.querySelector('.admin-warning').style.display = (role === 'administrator') ? 'inline' : 'none';
+        });
+    </script>
+</body>
+</html>

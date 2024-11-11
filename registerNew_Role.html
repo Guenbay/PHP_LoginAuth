@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+</head>
+<body>
+    <h2>Registrieren</h2>
+    <form action="register.php" method="POST">
+        <!-- Vorname und Nachname -->
+        <label for="firstName">Vorname:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Nachname:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <!-- E-Mail -->
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Passwort -->
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <!-- Passwort Bestätigung -->
+        <label for="confirmPassword">Passwort bestätigen:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <!-- Auswahl der Rolle -->
+        <label for="role">Rolle:</label>
+        <select id="role" name="role" required>
+            <option value="">-- Rolle wählen --</option>
+            <option value="student">Schüler</option>
+            <option value="teacher">Lehrer</option>
+            <option value="admin">Administrator</option>
+        </select>
+        <p style="color: red; font-size: 0.9em;">* Administratorzugänge sollten nur von bestehenden Administratoren erstellt werden.</p><br>
+
+        <!-- Registrierungs-Button -->
+        <button type="submit" name="signUp">Registrieren</button>
+    </form>
+
+    <p><a href="index.php">Zurück zur Anmeldung</a></p>
+</body>
+</html>
