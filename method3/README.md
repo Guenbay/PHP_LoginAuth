@@ -1,0 +1,1 @@
+works without any Class
