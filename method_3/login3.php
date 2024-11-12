@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signIn'])) {
     // Wenn ein Benutzer gefunden wurde
     if ($userType) {
         // Weiterleitung zur Homepage
-        header('Location: homepage4.php');
+        header('Location: homepage3.php');
         exit();
     } else {
         // Fehlerausgabe, wenn keine Übereinstimmung gefunden wurde
