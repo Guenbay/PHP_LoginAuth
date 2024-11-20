@@ -1,4 +1,15 @@
 # PHP_LoginAuth
+NEXT UP:
+- Checking the SignUp Code which will be changed or adjusted for each method.
+- Clearifying and providing the Database which is used for this case.
+- Dashboard of "Homepage" for each User is different and depends on their permissions  
+- Final stage planed to be v_2.0
+
+v_1.4
+Final tets for login are cleared.
+Using different Methods which includes code with or without a Class to use the DB
+and checking for different User in more then one table.
+
 v_1.3
 
 different role in correct DB for SignIn / SignUp fixed
