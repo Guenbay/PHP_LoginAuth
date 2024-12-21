@@ -1,9 +1,13 @@
 # PHP_LoginAuth
 NEXT UP:
-- Checking the SignUp Code which will be changed or adjusted for each method.
 - Clearifying and providing the Database which is used for this case.
 - Dashboard of "Homepage" for each User is different and depends on their permissions  
 - Final stage planed to be v_2.0
+
+v_1.5
+registration form is updated - works now with tables to register for student or teacher separately.
+"User"-Class includes use prepared statements, login function, getUserName and getUserType as one logout function.
+SignUp Code at this point can be used for every other method code.
 
 v_1.4
 Final tets for login are cleared.
