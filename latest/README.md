@@ -1,6 +1,10 @@
-v_1.5 registration form is updated - works now with tables to register for student or teacher separately. "User"-Class includes use prepared statements, login function, getUserName and getUserType as one logout function. SignUp Code at this point can be used for every other method code.
+v_1.5 
 
-v_1.4 Final tets for login are cleared. Using different Methods which includes code with or without a Class to use the DB and checking for different User in more then one table.
+registration form is updated - works now with tables to register for student or teacher separately. "User"-Class includes use prepared statements, login function, getUserName and getUserType as one logout function. SignUp Code at this point can be used for every other method code.
+
+v_1.4 
+
+Final tets for login are cleared. Using different Methods which includes code with or without a Class to use the DB and checking for different User in more then one table.
 
 v_1.3
 
